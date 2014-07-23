@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+##This function stores the matrix parameters as set and allows retrieval
+## using the get function. Additionally, it sets the inverse matrix as the setmatrix
+## function when the cacheSolve function is initiated and had a getmatrix function to retrieve it. 
 
 makeCacheMatrix <- function(x = matrix()) {
 	  m <- NULL
@@ -19,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+##The cacheSolve function checks if the inverse matrix was already stored 
+##otherwise it creates the inverse matrix and uses the makeCashmatrix's setmatrix function
+## to store the inverse matrix
 
 cacheSolve <- function(x, ...) {
 	  
