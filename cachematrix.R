@@ -24,6 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##The cacheSolve function checks if the inverse matrix was already stored 
 ##otherwise it creates the inverse matrix and uses the makeCashmatrix's setmatrix function
 ## to store the inverse matrix
+##
 
 cacheSolve <- function(x, ...) {
 	  
